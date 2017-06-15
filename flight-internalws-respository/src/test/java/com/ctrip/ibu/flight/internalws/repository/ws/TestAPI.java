@@ -1,11 +1,15 @@
 package com.ctrip.ibu.flight.internalws.repository.ws;
 
+import com.ctrip.soa.global.api.comm.head.v1.Head;
 import com.ctrip.soa.global.api.orderdetailsearch.v1.GaOrderDetailSearchRequest;
 import com.ctrip.soa.global.api.orderdetailsearch.v1.GaOrderDetailSearchResponse;
 import com.ctrip.soa.international.ibuflightapi.service.v1.IBUFlightAPIClient;
 import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by kyxie on 2017/6/13.
@@ -27,5 +31,12 @@ public class TestAPI extends TestCase {
         }
 
         Assert.assertNotNull(orderDetail);
+
+        //new Thread(()-> System.out.println(Thread.currentThread().getName())).start();
+    }
+
+    @Test
+    public void testFlightApiInvoker(){
+
     }
 }

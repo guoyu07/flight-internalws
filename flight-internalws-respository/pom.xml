@@ -12,6 +12,10 @@
     <artifactId>flight-internalws-respository</artifactId>
     <packaging>jar</packaging>
 
+    <properties>
+        <javax.inject.version>1</javax.inject.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -29,6 +33,16 @@
             <groupId>com.ctriposs.baiji</groupId>
             <artifactId>baiji-rpc-client</artifactId>
             <version>2.5.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ctrip.ibu.flight</groupId>
+            <artifactId>flight-internalws-business</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.Inject</artifactId>
+            <version>${javax.inject.version}</version>
         </dependency>
     </dependencies>
 
