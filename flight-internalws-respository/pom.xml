@@ -39,6 +39,10 @@
             <groupId>com.ctrip.ibu.flight</groupId>
             <artifactId>flight-internalws-business</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.ctrip.ibu.flight</groupId>
+            <artifactId>flight-internalws-common</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>javax.inject</groupId>
